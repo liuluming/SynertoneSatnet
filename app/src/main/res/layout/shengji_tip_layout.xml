@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/DIMEN_500PX"
+    android:layout_height="@dimen/DIMEN_300PX"
+    android:background="@drawable/shengji_bg"
+    android:layout_gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/getbanben_number"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_80PX"
+        android:gravity="center"
+        android:text="协同星网V1.0.2"
+        android:textColor="@color/fontcolor"
+        android:layout_marginTop="@dimen/DIMEN_40PX"
+        android:layout_marginBottom="@dimen/DIMEN_80PX"
+        android:textSize="@dimen/DIMEN_45PX" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_100PX"
+        android:orientation="horizontal"
+         android:layout_marginBottom="@dimen/DIMEN_15PX">
+
+        <Button
+            android:id="@+id/xianzaixiazai"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="现在下载"
+            android:background="@null"
+            android:textColor="@drawable/shengji_textcolor"
+            android:textSize="@dimen/DIMEN_35PX" />
+
+        <Button
+            android:id="@+id/shaohougengxin"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="稍后更新"
+            android:background="@null"
+            android:textColor="@drawable/shengji_textcolor"
+            android:textSize="@dimen/DIMEN_35PX" />
+    </LinearLayout>
+
+</LinearLayout>

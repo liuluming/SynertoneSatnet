@@ -1,0 +1,56 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.jakewharton.butterknife'
+android {
+    compileSdkVersion 27
+    buildToolsVersion "27.0.3"
+
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [ moduleName : project.getName() ]
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+def supportVersion = "27.0.2"
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation project(':imageselector')
+    implementation project(':uploadservice')
+    implementation project(':uploadservice-ftp')
+    implementation 'commons-net:commons-net:3.6'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    implementation project(':recycleViewAdapter')
+    implementation "com.android.support:support-v4:${supportVersion}"
+    implementation "com.android.support:appcompat-v7:${supportVersion}"
+    implementation "com.android.support:recyclerview-v7:${supportVersion}"
+    implementation 'com.jakewharton:butterknife:8.5.1'
+    implementation 'com.github.ithedan:CustomViewBgUi:v1.0'
+    implementation 'com.github.bumptech.glide:glide:4.7.1'
+    implementation 'com.github.chrisbanes:PhotoView:2.1.3'
+    implementation('com.github.hotchemi:permissionsdispatcher:3.3.1') {
+        // if you don't use android.app.Fragment you can exclude support for them
+        exclude module: "support-v13"
+    }
+    implementation 'com.google.code.gson:gson:2.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.7.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+    annotationProcessor 'com.github.hotchemi:permissionsdispatcher-processor:3.3.1'
+    implementation project(':common-utils')
+    annotationProcessor 'com.alibaba:arouter-compiler:1.1.4'
+}

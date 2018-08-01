@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">协同星网</string>
+    <string name="myfont">天地一号</string>
+    <string name="newpassword">新密码</string>
+    <string name="oldpassword">原始密码</string>
+    <string name="passwordagain">确认密码</string>
+    <string name="remember">记住我</string>
+    <string name="autolog">自动登录</string>
+    <string name="login">登录</string>
+    <string name="username">请输入用户名:</string>
+    <string name="password">请输入密码:</string>
+    <string name="online">在线</string>
+    <string name="offline">离线</string>
+    <string name="my_order">我的订购</string>
+    <string name="query_flow">流量查询</string>
+    <string name="modify_pwd">修改密码</string>
+    <string name="person_center">个人中心</string>
+</resources>

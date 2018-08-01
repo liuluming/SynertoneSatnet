@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="synertone.com.satnet.HomeActivity"
+    android:background="@color/white">
+
+    <synertone.com.satnet.view.AmwellImageCycleView
+        android:id="@+id/amwell_ad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        />
+
+    <synertone.com.satnet.view.MyGridView
+        android:layout_below="@id/amwell_ad"
+        android:layout_marginTop="60dp"
+        android:id="@+id/mgv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="3"
+        android:listSelector="@android:color/transparent"
+        android:cacheColorHint="@null"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal">
+    </synertone.com.satnet.view.MyGridView>
+</RelativeLayout>

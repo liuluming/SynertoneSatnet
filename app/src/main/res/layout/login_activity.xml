@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         >
+        <RelativeLayout
+            android:id="@+id/logoLayout"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:scaleType="fitXY"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            >
+
+            <ImageView
+                android:id="@+id/login_logo"
+                android:layout_width="104dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_logo" />
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="52dp"
+                android:layout_marginTop="72dp"
+                android:layout_toRightOf="@id/login_logo"
+                android:scaleType="fitXY"
+                android:src="@drawable/textlogo" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_below="@id/logoLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingBottom="10dp"
+            android:layout_marginTop="15dp" >
+
+            <FrameLayout
+                android:id="@+id/editFra1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true">
+                <EditText
+                    android:id="@+id/login_ed_user"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:inputType="textUri"
+                    android:maxLength="20"
+                    android:saveEnabled="true"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/edittext_shap"
+                    android:hint="@string/username"
+                    android:paddingLeft="40dp"
+                    android:paddingRight="10dp"/>
+                <!--  android:drawableRight="@drawable/icon_clear"-->
+                <requestFocus />
+                <ImageView
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/login_user_image"/>
+                <TextView
+                    android:layout_gravity="bottom"
+                    android:layout_width="fill_parent"
+                    android:layout_marginLeft="30dp"
+                    android:layout_height="2dp"
+                    android:background="@drawable/progress_buffering"/>
+            </FrameLayout>
+            <FrameLayout
+                android:id="@+id/editFra2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editFra1">
+                <EditText
+                    android:id="@+id/login_ed_password"
+                    android:inputType="textPassword"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:maxLength="16"
+                    android:saveEnabled="true"
+                    android:singleLine="true"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/edittext_shap"
+                    android:hint="@string/password"
+                    android:paddingLeft="40dp"
+                    android:paddingRight="40dp"/>
+                <!-- android:drawableRight="@drawable/icon_clear"-->
+                <requestFocus />
+                <ImageView
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/login_pass_image"/>
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:src="@drawable/show_pass_shap_nor"
+                    android:visibility="invisible"/>
+
+            </FrameLayout>
+
+
+            <CheckBox
+                android:id="@+id/remember"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/autolog"
+                android:button="@drawable/btn_check"
+                android:padding="5dip"
+                android:textSize="12sp"
+                android:text="@string/remember"
+                android:textColor="@color/shenhui" />
+
+            <CheckBox
+                android:id="@+id/autolog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignRight="@+id/editFra1"
+                android:layout_below="@id/editFra2"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dip"
+                android:button="@drawable/btn_check"
+                android:padding="5dip"
+                android:textSize="12sp"
+                android:text="@string/autolog"
+                android:textColor="@color/shenhui"
+                android:visibility="invisible"/>
+
+            <Button
+                android:id="@+id/btn_login"
+                style="@style/ButtonStyle"
+                android:layout_below="@id/autolog"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/white"
+                android:alpha="0.8"
+                android:text="@string/login" />
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Material color palette: https://www.google.com/design/spec/style/color.html#color-color-palette -->
+    <color name="colorPrimary">#03a9f4</color> <!-- 500 -->
+    <!-- 700 -->
+    <color name="colorAccent">#40c4ff</color> <!-- A200 -->
+    <color name="gray_line">#CFCFCF</color>
+    <color name="text_content">#333333</color> <!-- 100 -->
+    <color name="bg">#F0F0F0</color>
+    <color name="txt_color">#48495F</color>
+    <color name="item_name_color">#262626</color>
+</resources>

@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:background="#ffffff"
+    android:layout_height="fill_parent" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/ll_flow_meal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_100PX"
+                android:gravity="center_vertical"
+                android:background="@drawable/btn_disabled"
+                android:orientation="horizontal" >
+
+                <!--客户名称-->
+                <TextView
+                    android:id="@+id/tv_meal_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="流量套餐有效期到5月："
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/fontcolor"
+                    android:drawableRight="@drawable/ic_right"
+                    android:textSize="@dimen/DIMEN_30PX" />
+
+               <!-- <TextView
+                    android:id="@+id/clint_name_lv"
+                    android:layout_width="@dimen/DIMEN_150PX"
+                    android:layout_height="@dimen/DIMEN_70PX"
+                    android:background="@drawable/bg_edittext"
+                    android:ems="8"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:hint="爱新觉罗·张"
+                    android:textSize="@dimen/DIMEN_30PX"
+                    android:textColor="@color/fontcolor" />-->
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_1PX"
+                android:background="#CFCFCF" />
+            <LinearLayout
+                android:id="@+id/ll_order_information"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_100PX"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+                <!--月度总扣费-->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="服务名称："
+                    android:textColor="@color/fontcolor"
+                    android:textSize="@dimen/DIMEN_30PX" />
+
+                <TextView
+                    android:id="@+id/tv_server_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="服务有效期到6月底"
+                    android:textSize="@dimen/DIMEN_30PX"
+                    android:textColor="@color/fontcolor" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_1PX"
+                android:background="#CFCFCF" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_100PX"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+                <!--套餐扣费信息：-->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="产品价格（元）："
+                    android:textColor="@color/fontcolor"
+                    android:textSize="@dimen/DIMEN_30PX" />
+
+                <TextView
+                    android:id="@+id/tv_product_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="6.66"
+                    android:textSize="@dimen/DIMEN_30PX"
+                    android:textColor="@color/fontcolor" />
+            </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/DIMEN_1PX"
+                    android:background="#CFCFCF" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/DIMEN_100PX"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+                    <!--套餐扣费信息：-->
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="产品流量（MB）："
+                        android:textColor="@color/fontcolor"
+                        android:textSize="@dimen/DIMEN_30PX" />
+
+                    <TextView
+                        android:id="@+id/tv_product_flow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="500"
+                        android:textSize="@dimen/DIMEN_30PX"
+                        android:textColor="@color/fontcolor" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/DIMEN_1PX"
+                    android:background="#CFCFCF" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/DIMEN_100PX"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+                    <!--套餐扣费信息：-->
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="套餐外流量价格："
+                        android:textColor="@color/fontcolor"
+                        android:textSize="@dimen/DIMEN_30PX" />
+
+                    <TextView
+                        android:id="@+id/tv_extra_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="1"
+                        android:textSize="@dimen/DIMEN_30PX"
+                        android:textColor="@color/fontcolor" />
+                </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_1PX"
+                android:background="#CFCFCF" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_100PX"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+                <!--流量包扣费信息：：-->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="生效时间："
+                    android:textColor="@color/fontcolor"
+                    android:textSize="@dimen/DIMEN_30PX" />
+
+                <TextView
+                    android:id="@+id/tv_current_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="2017-01-20 17:17:23"
+                    android:textSize="@dimen/DIMEN_30PX"
+                    android:textColor="@color/fontcolor" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_1PX"
+                android:background="#CFCFCF" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_100PX"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+                <!--套餐外流量扣费信息：：-->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="失效时间："
+                    android:textColor="@color/fontcolor"
+                    android:textSize="@dimen/DIMEN_30PX" />
+
+                <TextView
+                    android:id="@+id/tv_expiry_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="2017-05-31 00:00:00"
+                    android:textSize="@dimen/DIMEN_30PX"
+                    android:textColor="@color/fontcolor" />
+            </LinearLayout>
+            </LinearLayout>
+           <!-- <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_3PX"
+                android:background="#CFCFCF" />-->
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

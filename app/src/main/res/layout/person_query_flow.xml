@@ -1,0 +1,219 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/running_bg">
+    <include layout="@layout/top_bar_layout" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="20dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="本月套餐内总流量（含流量包）"
+        android:textColor="@color/fontcolor"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="总流量："
+            android:textColor="@color/fontcolor"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/total_flow_num"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="0M"
+            android:textColor="@color/fontcolor"
+            android:textSize="18sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/fontcolor"
+            android:text="剩余流量："
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/usable_flow_num"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="0M"
+            android:textColor="@color/fontcolor"
+            android:textSize="18sp" />
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/pb_progressbar"
+        style="@style/StyleProgressBarMini"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_progressbar_bg"
+        android:max="100"
+        android:progress="0" />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="本月主套餐总流量（含结余）"
+            android:textColor="@color/fontcolor"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="@color/fontcolor"
+                android:text="总流量："
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/main_total_flow_num"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="0M"
+                android:textColor="@color/fontcolor"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="剩余流量："
+                android:textColor="@color/fontcolor"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/main_usable_flow_num"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/fontcolor"
+                android:text="0M"
+                android:textSize="18sp" />
+        </LinearLayout>
+        <ProgressBar
+            android:id="@+id/pb_progressbar1"
+            style="@style/StyleProgressBarMini"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_progressbar_bg"
+            android:max="100"
+            android:progress="0" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="本月流量包总流量"
+            android:textColor="@color/fontcolor"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="总流量："
+                android:textColor="@color/fontcolor"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/packet_total_num"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/fontcolor"
+                android:text="0M"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="剩余流量："
+                android:textColor="@color/fontcolor"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/packet_usable_num"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="0M"
+                android:textColor="@color/fontcolor"
+                android:textSize="18sp" />
+        </LinearLayout>
+        <ProgressBar
+            android:id="@+id/pb_progressbar2"
+            style="@style/StyleProgressBarMini"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_progressbar_bg"
+            android:max="100"
+            android:progress="0" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="本月套餐外使用流量"
+            android:textColor="@color/fontcolor"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="使用流量："
+                android:textColor="@color/fontcolor"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/food_fp_has_rest"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="0M"
+                android:textColor="@color/fontcolor"
+                android:textSize="18sp" />
+        </LinearLayout>
+        <ProgressBar
+            android:id="@+id/pb_progressbar3"
+            style="@style/StyleProgressBarMini"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_progressbar_bg"
+            android:max="100"
+            android:progress="0" />
+    </LinearLayout>
+</LinearLayout>

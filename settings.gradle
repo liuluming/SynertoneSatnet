@@ -1,0 +1,6 @@
+include ':app', ':linphone-android', ':ftpmoudle'
+include ':common-utils'
+include ':imageselector'
+include ':recycleViewAdapter'
+include ':uploadservice'
+include ':uploadservice-ftp'

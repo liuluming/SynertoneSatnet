@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:background="#ffffff"
+    android:layout_height="fill_parent" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_100PX"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+                <TextView
+                    android:id="@+id/tv_bill_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="2017年3月账单"
+                    android:textColor="@color/fontcolor"
+                    android:textSize="@dimen/DIMEN_30PX"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_100PX"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <!--客户名称-->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="客户名称："
+                    android:textColor="@color/fontcolor"
+                    android:textSize="@dimen/DIMEN_30PX" />
+
+                <TextView
+                    android:id="@+id/clint_name_lv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:hint="--"
+                    android:textSize="@dimen/DIMEN_30PX"
+                    android:textColor="@color/fontcolor" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_1PX"
+                android:background="#CFCFCF" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_100PX"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+                <!--月度总扣费-->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="月度总扣费："
+                    android:textColor="@color/fontcolor"
+                    android:textSize="@dimen/DIMEN_30PX" />
+
+                <TextView
+                    android:id="@+id/month_bill_totle_lv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:hint="--"
+                    android:textSize="@dimen/DIMEN_30PX"
+                    android:textColor="@color/fontcolor" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_1PX"
+                android:background="#CFCFCF" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_100PX"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+                <!--套餐扣费信息：-->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="套餐扣费信息："
+                    android:textColor="@color/fontcolor"
+                    android:textSize="@dimen/DIMEN_30PX" />
+
+                <TextView
+                    android:id="@+id/bill_info_lv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:hint="--"
+                    android:textSize="@dimen/DIMEN_30PX"
+                    android:textColor="@color/fontcolor" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_1PX"
+                android:background="#CFCFCF" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_100PX"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+                <!--流量包扣费信息：：-->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="流量包扣费信息："
+                    android:textColor="@color/fontcolor"
+                    android:textSize="@dimen/DIMEN_30PX" />
+
+                <TextView
+                    android:id="@+id/liulb_bill_info_lv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:hint="--"
+                    android:textSize="@dimen/DIMEN_30PX"
+                    android:textColor="@color/fontcolor" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_1PX"
+                android:background="#CFCFCF" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_100PX"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+                <!--套餐外流量扣费信息：：-->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="套餐外流量扣费信息："
+                    android:textColor="@color/fontcolor"
+                    android:textSize="@dimen/DIMEN_30PX" />
+
+                <TextView
+                    android:id="@+id/bill_info_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:hint="--"
+                    android:textSize="@dimen/DIMEN_30PX"
+                    android:textColor="@color/fontcolor" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_1PX"
+                android:background="#CFCFCF" />
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

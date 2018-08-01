@@ -1,0 +1,60 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.alibaba.arouter'
+android {
+    compileSdkVersion 27
+    buildToolsVersion '27.0.3'
+    defaultConfig {
+        applicationId "synertone.com.satnet"
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode 2
+        versionName "1.2.0"
+       /* ndk{
+            abiFilters "armeabi","armeabi-v7a";
+        }*/
+        multiDexEnabled true
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [ moduleName : project.getName() ]
+            }
+        }
+    }
+    buildTypes {
+        debug{
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+def supportVersion = "27.0.2"
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:multidex:1.0.1'
+    implementation project(':linphone-android')
+    implementation project(':ftpmoudle')
+    implementation "com.android.support:support-v4:${supportVersion}"
+    implementation "com.android.support:appcompat-v7:${supportVersion}"
+    implementation 'com.google.code.gson:gson:2.1'
+    implementation 'org.xutils:xutils:3.4.0'
+    implementation project(':common-utils')
+    implementation project(':uploadservice')
+    configurations.all {
+        resolutionStrategy {
+            force "com.android.support:support-v4:${supportVersion}"
+            force "com.android.support:design:${supportVersion}"
+            force "com.android.support:appcompat-v7:${supportVersion}"
+            force "com.android.support:support-fragment:${supportVersion}"
+            force "com.android.support:support-core-utils:${supportVersion}"
+            force "com.android.support:support-core-ui:${supportVersion}"
+            force "com.android.support:support-compat:${supportVersion}"
+        }
+    }
+    annotationProcessor 'com.alibaba:arouter-compiler:1.1.4'
+
+}

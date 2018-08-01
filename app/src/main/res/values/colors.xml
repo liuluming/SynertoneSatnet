@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="fontcolor">#333333</color>
+    <color name="redcolor">#ff0000</color>
+    <color name="info_show_normal">#ffffff</color>
+    <color name="info_show_press">#fafafa</color>
+    <color name="item_name_color">#262626</color>
+    <color name="dialog_tip">#2BC2D1</color>
+    <color name="shenhui">#8B8B7A</color>
+    <color name="black">#000000</color>
+    <color name="corner_button_normal">#00A0E3</color>
+    <color name="corner_button_selected">#027AAC</color>
+</resources>

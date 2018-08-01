@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="DIMEN_1PX">0.375dp</dimen>
+    <dimen name="DIMEN_10PX">3.75dp</dimen>
+    <dimen name="DIMEN_15PX">5.625dp</dimen>
+    <dimen name="DIMEN_20PX">7.5dp</dimen>
+    <dimen name="DIMEN_30PX">11.25dp</dimen>
+    <dimen name="DIMEN_35PX">13.125dp</dimen>
+    <dimen name="DIMEN_38PX">14.25dp</dimen>
+    <dimen name="DIMEN_40PX">15dp</dimen>
+    <dimen name="DIMEN_45PX">16.875dp</dimen>
+    <dimen name="DIMEN_60PX">22.5dp</dimen>
+    <dimen name="DIMEN_80PX">30dp</dimen>
+    <dimen name="DIMEN_100PX">37.5dp</dimen>
+    <dimen name="DIMEN_300PX">112.5dp</dimen>
+    <dimen name="DIMEN_500PX">187.5dp</dimen>
+
+</resources>

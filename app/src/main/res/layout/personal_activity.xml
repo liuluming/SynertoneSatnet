@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/running_bg"
+    android:orientation="vertical" >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top_bar_layout" />
+    <LinearLayout
+        android:id="@+id/my_order"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_100PX"
+        android:gravity="center"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/DIMEN_30PX"
+            android:layout_weight="0.85"
+            android:fontFamily="@string/myfont"
+            android:text="我的订购"
+            android:textColor="@color/fontcolor"
+            android:textSize="@dimen/DIMEN_30PX" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@string/myfont"
+            android:text="        "
+            android:textColor="@color/fontcolor" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.47"
+            android:fontFamily="@string/myfont"
+            android:text="        "
+            android:textColor="@color/fontcolor" />
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_margin="@dimen/DIMEN_10PX"
+            android:background="@drawable/come_btn" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_1PX"
+        android:layout_gravity="center"
+        android:background="#CFCFCF" />
+    <LinearLayout
+        android:id="@+id/zhangdanchaxun"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_100PX"
+        android:gravity="center"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/DIMEN_30PX"
+            android:layout_weight="0.85"
+            android:fontFamily="@string/myfont"
+            android:text="账单查询"
+            android:textColor="@color/fontcolor"
+            android:textSize="@dimen/DIMEN_30PX" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@string/myfont"
+            android:text="        "
+            android:textColor="@color/fontcolor" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.47"
+            android:fontFamily="@string/myfont"
+            android:text="        "
+            android:textColor="@color/fontcolor" />
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_margin="@dimen/DIMEN_10PX"
+            android:background="@drawable/come_btn" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_1PX"
+        android:layout_gravity="center"
+        android:background="#CFCFCF" />
+    <LinearLayout
+        android:id="@+id/liuliangchaxun"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_100PX"
+        android:gravity="center"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/DIMEN_30PX"
+            android:layout_weight="0.85"
+            android:fontFamily="@string/myfont"
+            android:text="流量查询"
+            android:textColor="@color/fontcolor"
+            android:textSize="@dimen/DIMEN_30PX" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@string/myfont"
+            android:text="        "
+            android:textColor="@color/fontcolor" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.47"
+            android:fontFamily="@string/myfont"
+            android:text="        "
+            android:textColor="@color/fontcolor" />
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_margin="@dimen/DIMEN_10PX"
+            android:background="@drawable/come_btn" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_1PX"
+        android:layout_gravity="center"
+        android:background="#CFCFCF" />
+    <LinearLayout
+        android:id="@+id/change_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_100PX"
+        android:gravity="center"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/DIMEN_30PX"
+            android:layout_weight="0.85"
+            android:fontFamily="@string/myfont"
+            android:text="修改密码"
+            android:textColor="@color/fontcolor"
+            android:textSize="@dimen/DIMEN_30PX" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@string/myfont"
+            android:text="        "
+            android:textColor="@color/fontcolor" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.47"
+            android:fontFamily="@string/myfont"
+            android:text="        "
+            android:textColor="@color/fontcolor" />
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_margin="@dimen/DIMEN_10PX"
+            android:background="@drawable/come_btn" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_1PX"
+        android:layout_gravity="center"
+        android:background="#CFCFCF" />
+
+    <LinearLayout
+         android:id="@+id/ll_quit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_100PX"
+        android:gravity="center"
+         android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="horizontal" 
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/DIMEN_30PX"
+            android:layout_weight="0.85"
+            android:fontFamily="@string/myfont"
+            android:text="退出登录"
+            android:textColor="@color/fontcolor"
+            android:textSize="@dimen/DIMEN_30PX" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@string/myfont"
+            android:text="        "
+            android:textColor="@color/fontcolor" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.47"
+            android:fontFamily="@string/myfont"
+            android:text="        "
+            android:textColor="@color/fontcolor" />
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+             android:layout_margin="@dimen/DIMEN_10PX"
+            android:background="@drawable/come_btn" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_1PX"
+        android:layout_gravity="center"
+        android:background="#CFCFCF" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_100PX"
+        android:gravity="center"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/DIMEN_30PX"
+            android:layout_weight="6"
+            android:fontFamily="@string/myfont"
+            android:text="用户状态"
+            android:textColor="@color/fontcolor"
+            android:textSize="@dimen/DIMEN_30PX" />
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@string/myfont"
+            android:layout_marginLeft="80dp"
+            android:text="@string/offline"
+            android:textColor="@color/redcolor"
+            android:textSize="@dimen/DIMEN_30PX" />
+       />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_1PX"
+        android:layout_gravity="center"
+        android:background="#CFCFCF" />
+    <LinearLayout
+        android:id="@+id/ll_version_update"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_100PX"
+        android:gravity="center"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="horizontal" >
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:src="@drawable/appshengji"
+            android:visibility="gone"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/DIMEN_30PX"
+            android:layout_weight="8"
+            android:text="版本更新"
+            android:fontFamily="@string/myfont"
+            android:textColor="@color/fontcolor"
+            android:textSize="@dimen/DIMEN_30PX" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@string/myfont"
+            android:textColor="@color/fontcolor"
+            android:layout_weight="1"
+            android:text="当前版本：" />
+
+        <TextView
+            android:id="@+id/personal_version_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@string/myfont"
+            android:textColor="@color/fontcolor"
+            android:layout_weight="1"
+            android:text="1.48" />
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_margin="@dimen/DIMEN_10PX"
+            android:background="@drawable/come_btn" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_1PX"
+        android:layout_gravity="center"
+        android:background="#CFCFCF" />
+</LinearLayout>
+</ScrollView>
